@@ -24,6 +24,13 @@ public class Vitrina {
         }
         else System.out.println("Место на полке занято");
     }
+    public void takePhone(int polka, int position){
+        if (vitr[polka][position] != null){
+            System.out.println(vitr[polka][position].showInfo());
+            vitr[polka][position] = null;
+        }
+        else System.out.println("Тута нет телефона!!!");
+    }
     public void showAllPhone(){
         for (int i = 0; i < 2; i++){
             for (int j = 0; j < 6; j++){
